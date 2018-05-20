@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    tools:context=".ui.createtodotask.view.CreateTaskActivity">
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text|textCapSentences|textAutoCorrect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Title" />
+
+    <EditText
+        android:id="@+id/summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text|textCapSentences|textAutoCorrect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_title"
+        tools:text="Summary" />
+
+    <EditText
+        android:id="@+id/add_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:focusableInTouchMode="false"
+        android:inputType="none"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/add_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summary"
+        tools:text="Tue, 15, 2018" />
+
+    <EditText
+        android:id="@+id/add_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:inputType="none"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summary"
+        tools:text="23:59" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/check_box"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_time" />
+
+    <TextView
+        android:id="@+id/important"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/important"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@id/check_box"
+        app:layout_constraintStart_toEndOf="@id/check_box"
+        app:layout_constraintTop_toTopOf="@id/check_box" />
+
+
+</android.support.constraint.ConstraintLayout>

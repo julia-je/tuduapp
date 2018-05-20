@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TuDu</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="done">Done</string>
+    <string name="important">Important</string>
+    <string name="dialog_discard_changes">Discard changes?</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+</resources>
